@@ -14,4 +14,4 @@ if(name=="admin" && pwd=="1234")
 else
   res.send(name+ "is not yet a registered member" );
   
-}).listen(3001);
+}).listen(process.env.PORT || 3000);
