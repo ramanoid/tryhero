@@ -5,16 +5,20 @@ a.engine('handlebars',exphb({defaultLayout:'mainp'}));
 a.set('view engine','handlebars');
 a.use(express.static('views/static'));
 a.use(express.urlencoded());
-a.post('/login',(req,res)=>{
+a.post('/register',(req,res)=>{
   var name=req.body.uname;
   var pwd=req.body.passwrd;
+  var monum=req.body.mobinum;
+  var anum=req.body.anum;
+  res.send("thanks for regging"+name+pwd)
+
 //   var email=req.body.email;
-  if(name=="admin" && pwd=="1234")
-    res.send('login success');
-  else
-  res.send(name+ "is not yet a registered member" );
+//   if(name=="admin" && pwd=="1234")
+//     res.send('login success');
+//   else
+//   res.send(name+ "is not yet a registered member" );
   
-});
+// });
 a.get('/',(req,res)=>{
   res.render('index');
   //res.end();
