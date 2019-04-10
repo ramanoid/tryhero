@@ -5,7 +5,7 @@ a.engine('handlebars',exphb({defaultLayout:'mainp'}));
 a.set('view engine','handlebars');
 a.use(express.static('views/static'));
 a.use(express.urlencoded());
-a.post('/register',(req,res)=>{
+a.post('/',(req,res)=>{
   var name=req.body.uname;
   var pwd=req.body.passwrd;
   var monumiii=req.body.mobinume;
@@ -22,14 +22,14 @@ a.post('/register',(req,res)=>{
 // a.get('/',(req,res)=>{
 //   res.render('index');
   //res.end();
-});
-a.get('/about',(req,res)=>{
-  res.render('about');
-})
-a.get('/home',(req,res)=>{
-  res.render('home');
-})
-a.get('/index',(req,res)=>{
-  res.render('indexo');
-})
- .listen(process.env.PORT || 3000);
+// });
+// a.get('/about',(req,res)=>{
+//   res.render('about');
+// })
+// a.get('/home',(req,res)=>{
+//   res.render('home');
+// })
+// a.get('/index',(req,res)=>{
+//   res.render('indexo');
+// })
+}).listen(process.env.PORT || 3000);
