@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        table {
+  border: 1px solid black;
+  background-color: lightblue;
+  
+}
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid" >
+        <div class="row mx-4" >
+            <div class="col col-12 col-sm-6 col-md-5 col-lg-5 col-xl-5"></div>
+            <div class="col col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+               
+               <form action="/getdata" method = "POST">
+                   <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="uemail">
+    </div>
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter username" name="uname">
+    </div>
+    <div class="form-group">
+      <label for="phone numberr">Mobile:</label>
+      <input type="text" class="form-control" id="email" placeholder="Enter contact num" name="mob">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    </div>
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+    <button type="submit" style="background:teal" class="btn btn-primary">Submit My Data</button>
+              
+              
+     </form>
+     {{!-- <table >
+        <tr> <h1>fill in</h1>
+            <td>name</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>address</td>
+            <td><input type="text"></td> </tr>
+            <tr><td>place</td><td><input type="text"></td></tr>
+            <tr><td>contact number</td><td><input type="text"></td></tr>
+            <tr><td>email</td><td><input type="text"></td></tr>
+            <tr><td>password</td><td><input type="password"></td></tr>
+            <tr><td>confirm pw</td><td><input type="password"></td></tr>
+            <tr><td>district</td><td><select>
+                <option selected>select dist</option>
+                <option>koz</option>
+                <option>kann</option>
+            </select></td></tr>
+             <tr><td></td><td><input type="button" value="CREATE"></td></tr>         --}}
+    {{!-- </table> --}}
+            </div>
+           <div class="col col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2"></div>
+        </div>
+        
+    <div class="col col-12 col-sm-6 col-md-1 col-lg-3 col-xl-3"></div>
+    </div>
+    </div>
+</body>
+</html>
