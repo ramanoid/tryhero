@@ -8,8 +8,8 @@ a.use(express.urlencoded());
 a.post('/register',(req,res)=>{
   var name=req.body.uname;
   var pwd=req.body.passwrd;
-  var monum=req.body.mobinum;
-  var anum=req.body.anum;
+  var monumiii=req.body.mobinume;
+  var anumi=req.body.anume;
   res.send("thanks for regging"+name+pwd)
 
 //   var email=req.body.email;
@@ -19,8 +19,8 @@ a.post('/register',(req,res)=>{
 //   res.send(name+ "is not yet a registered member" );
   
 // });
-a.get('/',(req,res)=>{
-  res.render('index');
+// a.get('/',(req,res)=>{
+//   res.render('index');
   //res.end();
 });
 a.get('/about',(req,res)=>{
