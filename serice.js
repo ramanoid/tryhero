@@ -10,7 +10,8 @@ a.post('/getdata',(req,res)=>{
   var name=req.body.uname;
   var mobile=req.body.mob;
   var email=req.body.email;
-  res.send(name+"<br>"+mobile + "&nbsp" );
+  res.send(JSON.stringify({status:"success"}) );
+  res.send(JSON.stringify({status:'fail'}))
   
 });
 a.get('/',(req,res)=>{

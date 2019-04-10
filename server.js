@@ -11,7 +11,8 @@ a.post('/',(req,res)=>{
   var monumiii=req.body.mobinume;
   var anumi=req.body.anume;
   res.send("thanks for regging"+name+pwd)
-
+  res.send(JSON.stringify({status:"success"}) );
+  res.send(JSON.stringify({status:'fail'}))
 //   var email=req.body.email;
 //   if(name=="admin" && pwd=="1234")
 //     res.send('login success');
