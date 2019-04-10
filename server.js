@@ -26,7 +26,7 @@ a.get('/home',(req,res)=>{
 a.get('/index',(req,res)=>{
   res.render('indexo');
 })
- .listen(3000);
+ .listen(process.env.PORT || 3000);
 //a.get('/home',(req,res)=>{
   // res.write("this is the home");
    //res.end();
